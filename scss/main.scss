@@ -1,0 +1,31 @@
+// Base
+@import "base/normalize";
+@import "base/typography";
+@import "base/colors";
+
+// Vendors
+@import "vendors/mixins";
+
+// Components
+@import "components/birthday";
+@import "components/controls";
+@import "components/dots";
+
+// Pages
+@import "pages/home";
+
+
+// Global styles
+body {
+  background: url(../img/bg.jpeg);
+  background-size: cover;
+
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  position: relative;
+
+  max-width: 90%;
+  margin: 0 auto;
+}

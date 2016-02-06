@@ -1,0 +1,47 @@
+
+$dot-size: 15px;
+
+
+.dots {
+  margin-top: 10%;
+
+  &__group {
+    position: relative;
+
+    display: block;
+
+    margin: 2% auto;
+
+    @include clearfix();
+  }
+
+  &__item {
+    display: inline-block;
+    float: left;
+
+    width: $dot-size;
+    height: $dot-size;
+    margin: 0.5%;
+
+    border: 2px solid $dot-color;
+    border-radius: 50%;
+
+    &--full {
+      border-color: $dot-color--selected;
+      background-color: $dot-color--selected;
+    }
+  }
+}
+
+.group {
+  &__title {
+    position: absolute;
+    top: 0;
+    left: -40px;
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
+  }
+}
