@@ -1,15 +1,18 @@
 
 .challenge {
   color: #fff;
+  width: 80%;
+  margin: 0 auto 3% auto;
 
   &__subtitle {
-    font-size: 2.4rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400;
   }
 
   &__title {
-    font-size: 9rem;
-    font-weight: 700;
+    font-size: 6rem;
+    line-height: 5rem;
+    font-weight: 100;
   }
 
   .split {

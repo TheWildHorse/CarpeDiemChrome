@@ -395,11 +395,12 @@ h1, h2 {
     color: #E5E2E2; }
 
 .dots {
-  margin-top: 10%; }
+  width: 1456px;
+  margin: 0 auto; }
   .dots__group {
     position: relative;
     display: block;
-    margin: 2% auto; }
+    margin: 3px auto; }
     .dots__group::after {
       display: table;
       clear: both;
@@ -407,31 +408,58 @@ h1, h2 {
   .dots__item {
     display: inline-block;
     float: left;
-    width: 15px;
-    height: 15px;
-    margin: 0.5%;
-    border: 2px solid #E9E7E7;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    border: 1px solid #E9E7E7;
     border-radius: 50%; }
     .dots__item--full {
       border-color: #75ED75;
       background-color: #75ED75; }
 
+@media screen and (min-device-width: 932px) {
+  .dots {
+    width: 832px; }
+    .dots__item {
+      width: 4px;
+      height: 6px; } }
+@media screen and (min-device-width: 1140px) {
+  .dots {
+    width: 1040px; }
+    .dots__item {
+      width: 6px;
+      height: 6px; } }
+@media screen and (min-device-width: 1348px) {
+  .dots {
+    width: 1248px; }
+    .dots__item {
+      width: 8px;
+      height: 8px; } }
+@media screen and (min-device-width: 1556px) {
+  .dots {
+    width: 1456px; }
+    .dots__item {
+      width: 10px;
+      height: 10px; } }
 .group__title {
   position: absolute;
   top: 0;
   left: -40px; }
   .group__title h1 {
     font-size: 2.4rem;
-    font-weight: 400; }
+    font-weight: 100; }
 
 .challenge {
-  color: #fff; }
+  color: #fff;
+  width: 80%;
+  margin: 0 auto 3% auto; }
   .challenge__subtitle {
-    font-size: 2.4rem;
-    font-weight: 300; }
+    font-size: 2rem;
+    font-weight: 400; }
   .challenge__title {
-    font-size: 9rem;
-    font-weight: 700; }
+    font-size: 6rem;
+    line-height: 5rem;
+    font-weight: 100; }
   .challenge .split {
     display: block;
     width: 30%;
@@ -448,6 +476,6 @@ body {
 .container {
   position: relative;
   max-width: 90%;
-  margin: 0 auto; }
+  margin: 4% auto 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
